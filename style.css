@@ -1244,7 +1244,7 @@ img {
 
 .set1 {
 	width: 350px;
-	height: 500px;
+	height: 350px;
 	padding: 20px;
 	text-align: center;
 }
@@ -1273,7 +1273,7 @@ img {
 
 .set2 {
 	width: 350px;
-	height: 500px;
+	height: 350px;
 	padding: 20px;
 	text-align: center;
 }
@@ -1302,7 +1302,7 @@ img {
 
 .set3 {
 	width: 350px;
-	height: 500px;
+	height: 350px;
 	padding: 20px;
 	text-align: center;
 }
@@ -1314,7 +1314,7 @@ img {
 
 .set4 {
 	width: 350px;
-	height: 500px;
+	height: 350px;
 	padding: 20px;
 	text-align: center;
 }
@@ -1324,16 +1324,14 @@ img {
 	line-height: 2;
 }
 
-.footer-svg {
+.svg {
+	margin-top: 5px;
 	padding: 2px;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	fill: #f2f9f8;
 }
 
-.footer-svg:hover {
-	padding: 2px;
-	width: 20px;
-	height: 20px;
-	fill: #f2f9f8;
+.svg:hover {
+	fill:var(--accent);
 }
