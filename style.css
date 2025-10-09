@@ -75,9 +75,7 @@ nav {
 	height: 50px;
 	background-size: cover;
 
-	background: var(--gradient-1) {
-		border-radius: 8px;
-	}
+	background: var(--gradient-1)
 }
 
 .nav-links {
