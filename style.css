@@ -798,8 +798,8 @@ li {
 	}
 }
 .r-img {
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	position: relative;
 }
 .r-content:hover {
@@ -811,6 +811,12 @@ li {
 .image {
 	width: 50px;
 	height: 50px;
+}
+.service-pg {
+	width: 100%;
+}
+.service-header {
+	font-size: larger;
 }
 /* About Section - Complete design */
 .parent {
