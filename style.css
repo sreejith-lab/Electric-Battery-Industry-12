@@ -1165,10 +1165,11 @@ img {
 	height: 120px;
 	background-color: #0a3c3c;
 	/* deep teal tone */
-	box-shadow: #1a4747 4px 4px 50px;
+	/* box-shadow: #1a4747 4px 4px 50px; */
 }
-
-
+.blocks:hover {
+		transform: scale(1.0);
+}
 .resources-content {
 	gap: 8px;
 	padding: 12px;
