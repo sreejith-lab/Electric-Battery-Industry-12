@@ -767,7 +767,51 @@ li {
 	border-bottom-left-radius: 30%;
 	border-top-right-radius: 30%;
 }
-
+.r-home {
+	width: 100%;
+	height: auto;
+	display: flex;
+	text-align: center;
+	padding: 20px;
+	gap: 10px;
+}
+.r-content {
+	width: 300px;
+	/* height: 250px; */
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: #1a4747 2px solid ;
+	border-radius: 5%;
+	text-align: center;
+	animation: colorchange 4s linear infinite;
+	transition: transform 0.5s;
+}
+@keyframes colorchange {
+	0%{
+		background-color: #2fa39a;
+	}
+	100%{
+		background-color: #107575;
+	}
+}
+.r-img {
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+.r-content:hover {
+	transform:scale(1.05);
+	background-color:#0a3c3c;
+	color: #e6f7f5;
+	animation-play-state: paused;
+}
+.image {
+	width: 50px;
+	height: 50px;
+}
 /* About Section - Complete design */
 .parent {
 	display: grid;
@@ -776,11 +820,9 @@ li {
 	margin-top: 30px;
 	margin: 40px;
 }
-
 .parent {
 	padding: 10px 15px 10px 15px;
 }
-
 .card1,
 .card2,
 .card3,
@@ -1156,7 +1198,6 @@ img {
 	position: relative;
 	z-index: 1;
 	box-shadow: 0px 2px 8px 4px rgba(19, 138, 138, 0.4);
-	/* subtle teal glow */
 	transition: all 0.3s ease;
 }
 
@@ -1164,11 +1205,9 @@ img {
 	width: 1200px;
 	height: 120px;
 	background-color: #0a3c3c;
-	/* deep teal tone */
-	/* box-shadow: #1a4747 4px 4px 50px; */
 }
 .blocks:hover {
-		transform: scale(1.0);
+	transform: scale(1.0);
 }
 .resources-content {
 	gap: 8px;
