@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stackly-Electric Battery Industry</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="script.js"> -->
 </head>
 
 <body>
@@ -26,37 +29,35 @@
                 <li><a href="about.html" class="nav-link ">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link-active">Contact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="addtocart.html" class="cta-button">Shop Now</a></li>
             </ul>
         </nav>
     </header>
-<section class="contact-section">
-	<h2>Get in Touch</h2>
-	<p>We’re powering the future of electric mobility to Make Green and Clean Earth — let’s connect!</p>
+    <section class="shop-section">
+        <div class="shopping">
+            <div class="shop">
+                <p class="cart-logo">Shop</p>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                    <p id="count">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop-container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="sidebar-head">
+                    <p>My Cart</p>
+                </div>
+                <div id="cartitem">Your Card is Empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.0</h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<div class="contact-container">
-		<div class="contact-card">
-			<h3>Head Office</h3>
-			<p>123 - Avenue , LAS VEGAS </p>
-			<p>Email: support@Stackly.com</p>
-			<p>Phone: ☏ 1234567890</p>
-		</div>
-		<div class="contact-card">
-			<h3>Support</h3>
-			<p>Need help? Our team is available from Mon-Fri : 9:00 - 18:00</p>
-			<p>Email: support@Stackly.com</p>
-			<p>Phone: ☏ 1234567890</p>
-		</div>
-	</div>
-
-	<form class="contact-form">
-		<input type="text" placeholder="Your Name" required>
-		<input type="email" placeholder="Your Email" required>
-		<textarea rows="5" placeholder="Your Message"></textarea>
-		<button class="cta-button" type="submit">Send Message</button>
-	</form>
-</section>
     <footer>
         <div class="footer-parent">
             <div class="set1">
@@ -109,6 +110,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 
