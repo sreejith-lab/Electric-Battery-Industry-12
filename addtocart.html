@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stackly-Electric Battery Industry</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="script.js"> -->
 </head>
 
 <body>
@@ -26,37 +22,100 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link ">Home</a></li>
-                <li><a href="about.html" class="nav-link ">About</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="Blog.html" class="nav-link ">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="addtocart.html" class="cta-button">Shop Now</a></li>
+                <li><a href="addtocart.html" class="cta-button active">Shop Now</a></li>
             </ul>
+            <button id="cart-toggle">🛒 Cart (<span id="cart-count">0</span>)</button>
         </nav>
     </header>
-    <section class="shop-section">
-        <div class="shopping">
-            <div class="shop">
-                <p class="cart-logo">Shop</p>
-                <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
-                    <p id="count">0</p>
-                </div>
-            </div>
+    <main class="shop">
+        <div class="product">
+            <img src="Assests/volt tester.jpg" alt="">
+            <h3>Volt Tester</h3>
+            <p>$15.00</p>
+            <button class="add-cart" data-name="Volt Tester" data-price="15">Add to Cart</button>
         </div>
-        <div class="shop-container">
-            <div id="root"></div>
-            <div class="sidebar">
-                <div class="sidebar-head">
-                    <p>My Cart</p>
-                </div>
-                <div id="cartitem">Your Card is Empty</div>
-                <div class="foot">
-                    <h3>Total</h3>
-                    <h2 id="total">$ 0.0</h2>
-                </div>
-            </div>
+
+        <div class="product">
+            <img src="Assests/digital-battery-tester.jpg" alt="">
+            <h3>Digital Battery Tester</h3>
+            <p>$25.00</p>
+            <button class="add-cart" data-name="Digital Battery Tester" data-price="25">Add to Cart</button>
         </div>
-    </section>
+
+        <div class="product">
+            <img src="Assests/Dual connector.jpg" alt="Battery 3">
+            <h3>Dual connector</h3>
+            <p>$40.00</p>
+            <button class="add-cart" data-name="Dual Connector" data-price="40">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/charging cable.jpg" alt="">
+            <h3>Charging Cable</h3>
+            <p>$45.00</p>
+            <button class="add-cart" data-name="Charging Cable" data-price="45">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/CDI Ignition.jpg" alt="">
+            <h3>CDI Ignition</h3>
+            <p>$50.00</p>
+            <button class="add-cart" data-name="CDI Ignition" data-price="50">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/inverter.jpg" alt="">
+            <h3>Inverter</h3>
+            <p>$55.00</p>
+            <button class="add-cart" data-name="Inverter" data-price="55">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/ev Adapter.jpg" alt="">
+            <h3>Ev Adapter</h3>
+            <p>$60.00</p>
+            <button class="add-cart" data-name="Ev Adapter" data-price="60">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/e-socket.jpg" alt="">
+            <h3>E-Socket</h3>
+            <p>$70.00</p>
+            <button class="add-cart" data-name="E-Socket" data-price="70">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/charging dock.jpg" alt="">
+            <h3>Charging Dock</h3>
+            <p>$85.00</p>
+            <button class="add-cart" data-name="Charging Dock" data-price="85">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/ev charging dock.jpg" alt="">
+            <h3>Ev Charging Dock</h3>
+            <p>$120.00</p>
+            <button class="add-cart" data-name="Ev Charging Dock" data-price="120" >Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/evscooter.jpg" alt="">
+            <h3>Ev Scooter</h3>
+            <p>$180.00</p>
+            <button class="add-cart" data-name="Ev Scooter" data-price="180">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Assests/ev motor bike.jpg" alt="">
+            <h3>Ev Motor Bike</h3>
+            <p>$250.00</p>
+            <button class="add-cart" data-name="Ev Motor Bike" data-price="250">Add to Cart</button>
+        </div>
+    </main>
+
+    <aside class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p class="total">Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout">Checkout</button>
+    </aside>
+
+
 
     <footer>
         <div class="footer-parent">
@@ -110,8 +169,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
-
+    <script src="./script2.js"></script>
 </body>
 
 </html>
