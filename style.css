@@ -1748,13 +1748,26 @@ opacity: 0.8;
 	border-top: 1px solid black;
 }
 
-.hero-card2, .hero-card3, .hero-card4, .hero-card5, .hero-card6, .hero-card7{
-	display: none;
+.hero-card1,
+.hero-card2,
+.hero-card3,
+.hero-card4,
+.hero-card5,
+.hero-card6 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 20px;
 }
 
-.display{
-	display: none;
+/* Hidden state */
+.display {
+  display: none;
+  opacity: 0;
 }
-.display1{
-	display: block;
+
+/* Visible state */
+.display1 {
+  display: block;
+  opacity: 1;
 }

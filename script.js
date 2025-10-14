@@ -1,17 +1,23 @@
-// const btn = document.querySelector('#sum-id2');
+function openid(id) {
+    // Map li IDs to corresponding card IDs
+    const map = {
+        sumid1: "The-card1",
+        sumid2: "The-card2",
+        sumid3: "The-card3",
+        sumid4: "The-card4",
+        sumid5: "The-card5",
+        sumid6: "The-card6"
+    };
 
-// btn.addEventListener('click', function(){
-//     const div1 = document.querySelector('#The-card1');
-//     div1.classList.add('display');
-//     const div2 = document.querySelector('#The-card2');
-//     div2.classList.remove("hero-card2");
-// })
-// const btn2 = document.querySelector('#sum-id3');
+    // Hide all cards first
+    for (let key in map) {
+        document.getElementById(map[key]).classList.remove("display1");
+        document.getElementById(map[key]).classList.add("display");
+    }
 
-// btn2.addEventListener('click', function(){
-//     const div1 = document.querySelector('#The-card2');
-//     div1.classList.add('display');
-//     const div2 = document.querySelector('#The-card3');
-//     div2.classList.remove("hero-card2");
-// })
-
+    // Show only the selected one
+    const cardId = map[id];
+    const selectedCard = document.getElementById(cardId);
+    selectedCard.classList.remove("display");
+    selectedCard.classList.add("display1");
+}
