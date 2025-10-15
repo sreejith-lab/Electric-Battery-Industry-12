@@ -579,7 +579,8 @@ aside {
 	width: 100%;
 	position: relative;
 	display: inline-block;
-	overflow-x: hidden;
+	overflow: hidden;
+	padding: 30px;
 }
 
 .about-img {
@@ -592,7 +593,7 @@ aside {
 	background-size: 100% 100%;
 	animation: borderMove 5s infinite;
 	transition: transform 0.4s ease;
-	overflow-x: hidden;
+	/* overflow: hidden; */
 }
 .about-img:hover{
 	transform: scale(1.05);
@@ -612,7 +613,7 @@ aside {
 	/* width: 500px; */
 	/* height: 500px; */
 	margin: auto;
-	padding: 20px;
+	padding: 30px;
 	overflow-x: hidden;
 }
 
@@ -911,19 +912,17 @@ li {
 }
 .boxes {
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	align-items: center;
 }
 .services {
-	width: 500px;
-	height: 600px;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
 	padding: 30px;
 }
 .service-sections {
-	width: 550px;
 	object-fit: cover;
 	display: flex;
 	border: #052525 2px solid;
