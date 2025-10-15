@@ -6,37 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stackly-Electric Battery Industry</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="geometric-bg"></div>
-
-    <!-- Header -->
+    <!-- <div class="geometric-bg"></div> -->
     <header>
         <nav>
             <a href="#img">
                 <img class="logo" src="Assests/Stackly-blue-removebg-preview.png" alt="">
             </a>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <ul class="nav-links">
                 <li><a href="#img" class="nav-link active">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="shop" class="cta-button">Shop Now</a></li>
+                <li><a href="addtocart.html" class="cta-button">Shop Now</a></li>
             </ul>
-
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <a href="login.html" class="anchor"><i class="fa-regular fa-circle-user" id="user"><p class="user-para">Login In</p></i></a>
         </nav>
     </header>
+    <aside>
+        <div class="menu-nav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="shop" class="cta-button">Shop Now</a>
+        </div>
+    </aside>
 
     <!--  Enhanced Background -->
     <section id="img">
-        <!-- Network Background -->
         <div class="network-bg">
             <div class="network-line"></div>
             <div class="network-line"></div>
@@ -100,28 +106,34 @@
             </div>
         </div>
     </section>
-    <div class="a-img1">
-        <img class="vd1" src="Assests/electric-vehicle-charger-plug-with-digital-display.jpg" alt="">
-        <p class="img-content1">The electric battery industry is at the forefront of the global transition to clean
-            energy. It plays a crucial role in powering electric vehicles, renewable energy storage systems, and smart
-            grid solutions. Modern batteries particularly lithium-ion and technologies offer high energy density, faster
-            charging, and longer life cycles.</p>
-    </div>
-    <div class="a-img2">
-        <p class="img-content2">The electric battery industry is a key driver of the global transition to clean energy,
-            enabling the widespread use of electric vehicles and renewable power systems. By combining solar energy with
-            advanced battery storage, this sector reduces carbon emissions and promotes decentralized, eco-friendly
-            energy networks.</p>
-        <img class="vd2" src="Assests/electric-cars-are-being-charged-vehicle-parking-with-solar-panel-energy.jpg"
-            alt="">
-    </div>
-    <div class="a-img3">
-        <img class="vd3" src="Assests/man-charging-his-electric-car-charge-station-using-smartphone.jpg" alt="">
-        <p class="img-content3">The electric battery industry is transforming the global energy and transportation
-            landscape. It focuses on the design, production, renewable energy grids, and smart technologies which
-            deliver high energy efficiency, rapid charging, and extended life cycles, reducing dependency on fossil
-            fuels.</p>
-    </div>
+    <section class="animate">
+        <div class="a-img1">
+            <img class="vd1" src="Assests/electric-vehicle-charger-plug-with-digital-display.jpg" alt="">
+            <p class="img-content1">The electric battery industry is at the forefront of the global transition to clean
+                energy. It plays a crucial role in powering electric vehicles, renewable energy storage systems, and
+                smart
+                grid solutions. Modern batteries particularly lithium-ion and technologies offer high energy density,
+                faster
+                charging, and longer life cycles.</p>
+        </div>
+         <div class="a-img2">
+            <p class="img-content2">The electric battery industry is a key driver of the global transition to clean
+                energy,
+                enabling the widespread use of electric vehicles and renewable power systems. By combining solar energy
+                with
+                advanced battery storage, this sector reduces carbon emissions and promotes decentralized, eco-friendly
+                energy networks.</p>
+            <img class="vd2" src="Assests/electric-cars-are-being-charged-vehicle-parking-with-solar-panel-energy.jpg"
+                alt="">
+        </div>
+        <div class="a-img3">
+            <img class="vd3" src="Assests/man-charging-his-electric-car-charge-station-using-smartphone.jpg" alt="">
+            <p class="img-content3">The electric battery industry is transforming the global energy and transportation
+                landscape. It focuses on the design, production, renewable energy grids, and smart technologies which
+                deliver high energy efficiency, rapid charging, and extended life cycles, reducing dependency on fossil
+                fuels.</p>
+        </div> 
+    </section>
     <section>
         <div class="r-home">
             <div class="r-content">
@@ -161,7 +173,7 @@
                     promoting clean, sustainable energy use.</p>
             </div>
         </div>
-    </section>
+    </section> 
     <section>
         <div class="service-pg">
             <div class="service-header">
@@ -237,7 +249,7 @@
         </div>
         </div>
     </section>
-    <footer>
+     <footer>
         <div class="footer-parent">
             <div class="set1">
                 <img class="logo1" src="Assests/Stackly-blue-removebg-preview.png" alt="">
@@ -288,7 +300,9 @@
                     required stuffs . </p>
             </div>
         </div>
-    </footer>
+    </footer> 
+    <script src="script.js"></script>
+    <script src="./script2.js"></script>
 </body>
 
 </html>
