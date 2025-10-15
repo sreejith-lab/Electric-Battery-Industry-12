@@ -901,6 +901,7 @@ li {
 .service-pg {
 	width: 100%;
 	height: auto;
+	padding: 30px;
 }
 .service-header {
 	color: #138a8a;
@@ -915,14 +916,19 @@ li {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	align-items: center;
+	gap: 50px;
+}
+.service-sections img{
+	width: 100%;
 }
 .services {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
-	padding: 30px;
+	/* padding: 30px; */
 }
 .service-sections {
+	width: 100%;
 	object-fit: cover;
 	display: flex;
 	border: #052525 2px solid;
