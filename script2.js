@@ -4,6 +4,9 @@ const addCartButtons = document.querySelectorAll(".add-cart");
 const cartItemsList = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
 const cartCount = document.getElementById("cart-count");
+const cartremove =document.getElementById('remove');
+
+
 
 let cartItems = [];
 
