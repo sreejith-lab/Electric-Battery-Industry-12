@@ -6,8 +6,6 @@ const cartTotal = document.getElementById("cart-total");
 const cartCount = document.getElementById("cart-count");
 const cartremove =document.getElementById('remove');
 
-
-
 let cartItems = [];
 
 cartToggle.addEventListener("click", () => {
